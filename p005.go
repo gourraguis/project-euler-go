@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 //	Problem: What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
-//	We'll go through all the possible numbers until we find the smallest solution, not optimal but numbers are enough for us to not notice the difference
 func main() {
 	fmt.Println(smallestMultiple(20))
 }
