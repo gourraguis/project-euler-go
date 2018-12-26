@@ -1,5 +1,6 @@
 package utils
 
+//	Takes a number n and returns a map of primes that divide it and their exponents.
 func PrimeFactors(n int) map[int]int {
 	res := make(map[int]int)
 
@@ -30,6 +31,7 @@ func PrimeFactors(n int) map[int]int {
 	return res
 }
 
+//	Returns the number of dividers a number has
 func DivisorsNumber(n int) int {
 	res := 1
 
@@ -38,4 +40,20 @@ func DivisorsNumber(n int) int {
 	}
 
 	return res
+}
+
+func Factorial(n int) int {
+	if n < 1 {
+		return 1
+	}
+
+	var res int64 = 1
+	for i := 2; i <= n; i++ {
+		res *= int64(i)
+	}
+	return res
+}
+
+func Square(n int) int {
+	return int(n) * int(n)
 }
